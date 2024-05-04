@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Search Results</title>
+
+    <style>
+        body {
+            background-color: #099f6d;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #02421d;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        hr {
+            border:#fff;
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hotel Room Search Results for {{ rooms_data.location }}</h1>
+        <ul>
+            <li><strong>Room Number:</strong> {{ rooms_data.room_number }}</li>
+            <li><strong>Capacity:</strong> {{ rooms_data.capacity }}</li>
+            <li><strong>Price per Night:</strong> {{ rooms_data.price_per_night }}</li>
+            <li><strong>Available:</strong> {{ rooms_data.available }}</li>
+            <li><strong>Location:</strong> {{ rooms_data.location }}</li>
+            <hr>
+        </ul>
+    </div>
+</body>
+</html>
